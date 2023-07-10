@@ -1,5 +1,5 @@
 title: ShelterBoost
 description: We create no-code software to help shelters with managing clients, managing service requests, and HMIS integration.
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-slate
