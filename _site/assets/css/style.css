@@ -297,6 +297,23 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+/* The four lines below are for alignment of the contact form */
+form {
+  display: table;
+}
+
+d {
+  display: table-row;
+}
+
+label {
+  display: table-cell;
+}
+
+input {
+  display: table-cell;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -640,7 +657,7 @@ Full-Width Styles
 }
 
 #footer_wrap {
-  background: #fff;
+  background: #212121;
 }
 
 /*******************************************************************************
