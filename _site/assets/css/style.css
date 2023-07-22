@@ -302,7 +302,10 @@ time, mark, audio, video {
   align-items: center;
   text-align: center;
   background-color: #E78B4F;
-  color: #2C384D;
+  color: #000;
+  cursor: pointer;
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: white;
   padding: 1em;
   border-radius: 15px;
   -moz-border-radius: 15px;
