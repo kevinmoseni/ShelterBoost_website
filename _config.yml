@@ -1,5 +1,7 @@
-title: shelterboost
-description: We create no-code, AI-assisted software tools that help shelters manage their clients, service requests, and HMIS compliance.
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-slate
+remote_theme: pages-themes/slate@v0.2.0
+plugins:	
+ - jekyll-remote-theme # add this line to the plugins list if you already have one
+
