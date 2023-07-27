@@ -225,7 +225,7 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minitest (5.18.1)
+    minitest (5.19.0)
     nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
@@ -246,7 +246,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     regexp_parser (2.8.1)
-    rexml (3.2.5)
+    rexml (3.2.6)
     rouge (3.26.0)
     rubocop (1.50.2)
       json (~> 2.3)
@@ -299,7 +299,7 @@ GEM
       nokogiri (~> 1.6)
       rexml (~> 3.2)
     yell (2.2.2)
-    zeitwerk (2.6.8)
+    zeitwerk (2.6.9)
 
 PLATFORMS
   ruby
