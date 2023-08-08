@@ -36,16 +36,16 @@ time, mark, audio, video {
     color: #000;//#2C384D;
     cursor: pointer;
     -webkit-text-stroke-width: 0.25px;
-   -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: white;
     padding: 1em;
 //    border: 3px solid #FFF;
     border-radius: 15px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     margin: 0px;
-    margin-top: 30px; 
-    margin-right: 75px;
-    font-size: 1.5em;
+    margin-top: 25px; 
+    margin-right: 25px;
+    font-size: 1.25em;
     font-weight: bold;
     box-shadow: 0px 3px 0px #4d5e80;
 }
@@ -103,7 +103,7 @@ body {
 }
 
 h3 {
-    text-align:justify;
+    text-align:left;//justify;
     text-align-last:left;
     margin: 10px 0;
     font-weight: 300;
@@ -301,11 +301,11 @@ th {
 td {
   padding: 10px;
   border: 1px solid #373737;
- }
+ }S
 
 form {
   background: #f2f2f2;
-  padding: 40px;
+  //padding: 40px;
 }
 
 kbd {
@@ -369,7 +369,7 @@ Full-Width Styles
 
 #project_title {
   text-align: left;
-  margin: 0;
+  margin-left: 2em;
   color: #fff;
   font-size: 42px;
   font-weight: 700;
@@ -378,12 +378,12 @@ Full-Width Styles
 
 #project_tagline {
   color: #000;//#EE8D4D;//#fff;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
   background: none;
   //text-shadow: #111 0px 0px 10px;
-  margin-left:  2em;
-  margin-right: 2em;
+  margin-left:  1em;
+  margin-right: 1em;
 }
 
 //#downloads {
@@ -471,19 +471,19 @@ Small Device Styles
   }
 
   h1 {
-    font-size: 28px;
-  }
-
-  h2 {
     font-size: 24px;
   }
 
-  h3 {
+  h2 {
     font-size: 21px;
   }
 
-  h4 {
+  h3 {
     font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
   }
 
   h5 {
@@ -502,7 +502,7 @@ Small Device Styles
 
 @media screen and (max-width: 320px) {
   body {
-    font-size:14px;
+    font-size:11px;
   }
 
   #downloads {
@@ -523,7 +523,7 @@ Small Device Styles
   }
 
   h2 {
-    font-size: 21px;
+    font-size: 16px;
   }
 
   h3 {
