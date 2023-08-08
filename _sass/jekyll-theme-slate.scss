@@ -17,8 +17,8 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  letter-spacing: -1px;
-  text-align:justify;
+  letter-spacing: 0px;
+  text-align:left;//justify;
   margin: 0;
   padding: 0;
 //  padding-left:  -100px;
@@ -42,7 +42,7 @@ time, mark, audio, video {
     border-radius: 15px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
-    margin: 100px;
+    margin: 0px;
     margin-top: 30px; 
     margin-right: 75px;
     font-size: 1.5em;
@@ -90,8 +90,10 @@ Theme Styles
 *******************************************************************************/
 
 body {
-  //box-sizing: border-box;
-  //width: 100%;
+  position: absolute;
+  //position:fixed;
+  box-sizing: border-box;
+  width: 100%;
   color: #373737;
   background: #212121;
   font-size: 16px;
@@ -100,7 +102,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h3 {margin: 10px 0;
+h3 {
+    text-align:justify;
+    text-align-last:left;
+    margin: 10px 0;
     font-weight: 300;
     color:#222222;
     font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
@@ -122,7 +127,7 @@ h1 {
 h2 {
   padding-bottom: 2px;
   font-size: 32px;
-  //background: url('../images/bg_hr.png') repeat-x bottom;
+  background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
 h3 {
@@ -300,7 +305,7 @@ td {
 
 form {
   background: #f2f2f2;
-  padding: 200px;
+  padding: 40px;
 }
 
 kbd {
@@ -363,7 +368,7 @@ Full-Width Styles
 }
 
 #project_title {
-    text-align: left;
+  text-align: left;
   margin: 0;
   color: #fff;
   font-size: 42px;
@@ -377,18 +382,19 @@ Full-Width Styles
   font-weight: 500;
   background: none;
   //text-shadow: #111 0px 0px 10px;
-  margin-left: 175px;
+  margin-left:  2em;
+  margin-right: 2em;
 }
 
-#downloads {
-  position: absolute;
-  width: 210px;
-  z-index: 10;
-  bottom: -40px;
-  right: 0;
-  height: 70px;
-  background: url('../images/icon_download.png') no-repeat 0% 90%;
-}
+//#downloads {
+//  position: absolute;
+//  width: 210px;
+//  z-index: 10;
+//  bottom: -40px;
+//  right: 0;
+//  height: 70px;
+//  background: url('../images/icon_download.png') no-repeat 0% 90%;
+//}
 
 .zip_download_link {
   display: block;
@@ -446,8 +452,9 @@ Small Device Styles
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    font-size:14px;
+    body {
+    width: 100%;
+    font-size:11px;
   }
 
   #downloads {
