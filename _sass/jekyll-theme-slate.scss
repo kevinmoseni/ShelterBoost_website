@@ -33,16 +33,16 @@ time, mark, audio, video {
     background-color: #E78B4F;
     color: #000;//#2C384D;
     cursor: pointer;
-    -webkit-text-stroke-width: 0.25px;
-    -webkit-text-stroke-color: white;
+    //-webkit-text-stroke-width: 0.25px;
+    //-webkit-text-stroke-color: white;
     padding: 1em;
 //    border: 3px solid #FFF;
     border-radius: 15px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     margin: 0px;
-    margin-top: 25px; 
-    margin-right: 25px;
+    margin-top: 2.5em;//25px; 
+    margin-right: 2.5em;//25px;
     font-size: 1.25em;
     font-weight: bold;
     box-shadow: 0px 3px 0px #4d5e80;
@@ -369,7 +369,7 @@ Full-Width Styles
 
 #project_title {
   text-align: left;
-  margin-left: 2em;
+  margin-left: 4em;
   color: #fff;
   font-size: 42px;
   font-weight: 700;
@@ -382,8 +382,8 @@ Full-Width Styles
   font-weight: 500;
   background: none;
   //text-shadow: #111 0px 0px 10px;
-  margin-left:  1em;
-  margin-right: 1em;
+  margin-left:  5em;
+  margin-right: 5em;
 }
 
 //#downloads {
@@ -452,11 +452,66 @@ Small Device Styles
 }
 
 @media screen and (max-width: 480px) {
+    .outer {
+    width: 100%;
+    padding-top: 1em ;
+    padding-bottom: 0.6em;
+}
+
+    
+    #project_tagline {
+	color: #000;//#EE8D4D;//#fff;
+	font-size: 18px;
+	font-weight: 500;
+	background: none;
+	//text-shadow: #111 0px 0px 10px;
+	margin-left:  1em;
+	margin-right: 1em;
+    }
+    
+    .button {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background-color: #E78B4F;
+	color: #000;//#2C384D;
+	cursor: pointer;
+	//-webkit-text-stroke-width: 0.25px;
+	//-webkit-text-stroke-color: white;
+	//padding: 1em;
+	//    border: 3px solid #FFF;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	//margin-top: 2.5em;//25px;
+	//margin-right: 2.5em;//25px;
+	font-size: 1em;
+	font-weight: bold;
+	box-shadow: 0px 3px 0px #4d5e80;
+    }
+    .big-btn {
+	float: right;
+	//width: 90px;
+	//height: 40px;
+    }
+    
     body {
     width: 100%;
     font-size:11px;
   }
-
+    img {
+	position: relative;
+	width: 15%;
+	//padding: 5px;
+	//margin: 2px 0 2px 0;
+	//border: 1px solid #ebebeb;
+	//box-shadow: 0 0 5px #ebebeb;
+	//-webkit-box-shadow: 0 0 5px #ebebeb;
+	//-moz-box-shadow: 0 0 5px #ebebeb;
+	//-o-box-shadow: 0 0 5px #ebebeb;
+	//-ms-box-shadow: 0 0 5px #ebebeb;
+    }
+    
   #downloads {
     display: none;
   }
@@ -467,11 +522,15 @@ Small Device Styles
   }
 
   #project_title {
-  font-size: 32px;
+      margin-left: 3.4em;
+      text-align: justify;
+      font-size: 28px;
   }
 
   h1 {
-    font-size: 24px;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      font-size: 24px;
   }
 
   h2 {
@@ -505,25 +564,39 @@ Small Device Styles
     font-size:11px;
   }
 
+  img {
+      position: relative;
+      width: 15%;
+      //padding: 5px;
+      //margin: 2px 0 2px 0;
+      //border: 1px solid #ebebeb;
+      //box-shadow: 0 0 5px #ebebeb;
+      //-webkit-box-shadow: 0 0 5px #ebebeb;
+      //-moz-box-shadow: 0 0 5px #ebebeb;
+      //-o-box-shadow: 0 0 5px #ebebeb;
+      //-ms-box-shadow: 0 0 5px #ebebeb;
+  }
+  
   #downloads {
-    display: none;
+      display: none;
   }
-
+  
   .inner {
-    min-width: 240px;
-    max-width: 320px;
+      min-width: 240px;
+      max-width: 320px;
   }
-
-  #project_title {
-  font-size: 28px;
+  
+  #project_title{
+      text-align: justify;
+      font-size: 28px;
   }
 
   h1 {
-    font-size: 24px;
+      font-size: 24px;
   }
-
+  
   h2 {
-    font-size: 16px;
+      font-size: 16px;
   }
 
   h3 {
