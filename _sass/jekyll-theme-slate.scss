@@ -188,6 +188,7 @@ strong {
 }
 
 img {
+  width:10%;
   position: relative;
   margin: 0 auto;
   max-width: 739px;
@@ -501,9 +502,9 @@ Small Device Styles
   }
     img {
 	position: relative;
-	width: 15%;
+	width: 25%;
 	//padding: 5px;
-	//margin: 2px 0 2px 0;
+	margin-left: 1px;
 	//border: 1px solid #ebebeb;
 	//box-shadow: 0 0 5px #ebebeb;
 	//-webkit-box-shadow: 0 0 5px #ebebeb;

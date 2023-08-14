@@ -186,7 +186,7 @@ em, cite { font-style: italic; }
 
 strong { font-weight: bold; }
 
-img { position: relative; margin: 0 auto; max-width: 739px; }
+img { width: 10%; position: relative; margin: 0 auto; max-width: 739px; }
 
 p img { display: inline; margin: 0; padding: 0; vertical-align: middle; text-align: center; border: none; }
 
@@ -264,7 +264,7 @@ Small Device Styles
   .button { display: flex; align-items: center; text-align: center; background-color: #E78B4F; color: #000; cursor: pointer; border-radius: 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; font-size: 1em; font-weight: bold; box-shadow: 0px 3px 0px #4d5e80; }
   .big-btn { float: right; }
   body { width: 100%; font-size: 11px; }
-  img { position: relative; width: 15%; }
+  img { position: relative; width: 25%; margin-left: 1px; }
   #downloads { display: none; }
   .inner { min-width: 320px; max-width: 480px; }
   #project_title { margin-left: 3.4em; text-align: justify; font-size: 28px; }
