@@ -5,36 +5,60 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="assets/css/contactform.css" />
 
-{% seo %}
-    {% include head-custom.html %}
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+    <title>ShelterBoost | We create no-code software tools that help shelters with client management, service requests, and HMIS compliance.</title>
+
+    <div class="button big-btn" onClick="document.getElementById('fs-frm').scrollIntoView();"style="float:right;">
+      Contact Us
+    </div>
+
+    <div class="container">
+      <img src="logo.png" alt="LOGO" style="
+              border:none;
+              float: left;
+              padding-top: 20px;
+              padding-right: 0px;
+              padding-left: 20px;
+              padding-bottom: 20px;">
+    </div>
+
+
+    <meta name="generator" content="Jekyll v4.3.2" />
+    <meta property="og:title" content="ShelterBoost" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="We create no-code software tools that help shelters with client management, service requests, and HMIS compliance." />
+    <meta property="og:description" content="We create no-code software tools that help shelters with client management, service requests, and HMIS compliance." />
+    <link rel="canonical" href="http://localhost:4000/" />
+    <meta property="og:url" content="http://localhost:4000/" />
+    <meta property="og:site_name" content="ShelterBoost" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="ShelterBoost" />
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","description":"We create no-code software tools that help shelters with client management, service requests, and HMIS compliance.","headline":"ShelterBoost","name":"ShelterBoost","url":"http://localhost:4000/"}</script>
+    <!-- End Jekyll SEO tag -->
+
+
+    <!-- Setup Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TYR2TPSVL6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TYR2TPSVL6');
+    </script>
+
+    <!-- You can set your favicon here -->
+    <!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+    <!-- end custom head snippets -->
   </head>
 
   <body>
-
     <!-- HEADER -->
-
-    <div id="header_wrap" class="outer">
-      <header class="inner">
-	
-	  {% comment %}  
-          {% if site.github.is_project_page %}
-            <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
-            {% endif %}
-	    {% endcomment %}
-	    
-          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-
-          {% if site.show_downloads %}
-            <section id="downloads">
-              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-            </section>
-          {% endif %}
-      </header>
-    </div>
+    {% include nav.html %}
     
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
@@ -44,18 +68,8 @@
     </div>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-	
-	{% comment %}
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-	{% endcomment %}
-	
-	<p>Founded 2023</p>
-      </footer>
-    </div>
+    {% include footer.html %}
+
   </body>
+
 </html>
