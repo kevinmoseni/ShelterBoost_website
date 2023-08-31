@@ -192,7 +192,7 @@ strong { font-weight: bold; }
 
 img { width: 10%; position: relative; margin: 0 auto; max-width: 10%; }
 
-#logo_topleft { float: left; padding-top: 20px; padding-right: 0px; padding-left: 20px; padding-bottom: 00px; }
+#logo_top { float: left; padding-top: 20px; padding-right: 0px; padding-left: 20px; padding-bottom: 00px; }
 
 p img { display: inline; margin: 0; padding: 0; vertical-align: middle; text-align: center; border: none; }
 
@@ -253,7 +253,7 @@ blog_title { background: #fff; padding: 0.25em; display: table; margin-bottom: -
 
 #project_title { text-align: left; margin-left: 4em; color: #fff; font-size: 42px; font-weight: 700; text-shadow: #111 0px 0px 10px; }
 
-#menu-item { text-align: left; margin-left: 2em; color: #fff; font-size: 0.5em; font-weight: 400; text-shadow: #111 0px 0px 10px; }
+#menu-item { text-align: left; margin-left: 1.2em; color: #fff; font-size: 0.5em; font-weight: 400; text-shadow: #111 0px 0px 10px; }
 
 #project_tagline { text-align: center; font-size: 1.5em; color: #000; font-weight: 500; background: none; padding-top: 1em; margin-left: 5em; margin-right: 5em; }
 
@@ -279,14 +279,18 @@ Small Device Styles
 @media screen and (max-width: 992px) { img { max-width: 100%; } }
 @media screen and (max-width: 480px) { .outer { width: 100%; padding-top: 1em; padding-bottom: 0.6em; }
   #project_tagline { color: #000; font-size: 18px; font-weight: 500; background: none; margin-left: 1em; margin-right: 1em; }
+  blog_title { background: #fff; padding: 0.25em; display: table; margin-bottom: -0.5em; }
+  #blog_table_of_contents { text-align: center; font-size: 1.5em; color: #000; font-weight: 500; background: none; margin-left: 1em; margin-right: 1em; display: table; padding-top: 0.5em; padding-bottom: 0.5em; }
   .button { display: flex; align-items: center; text-align: center; background-color: #E78B4F; color: #000; cursor: pointer; border-radius: 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; font-size: 1em; font-weight: bold; box-shadow: 0px 3px 0px #4d5e80; }
-  .big-btn { float: right; }
+  .big-btn { margin-top: 1em; margin-right: 1em; margin-left: -6em; float: right; }
   body { width: 100%; font-size: 11px; }
-  img { position: relative; width: 25%; margin-left: 1px; }
+  #logo_top { float: right; margin-top: 5em; margin-right: -0.5em; }
+  img { width: 15%; }
   #downloads { display: none; }
   .inner { min-width: 320px; max-width: 480px; }
-  #project_title { margin-left: 3.4em; text-align: justify; font-size: 28px; }
-  h1 { margin-top: 1em; margin-bottom: 0.5em; font-size: 24px; }
+  #project_title { margin: 0em; margin-right: 3em; margin-left: 1em; text-align: left; font-size: 28px; }
+  #menu-item { text-align: left; margin-left: 1.2em; color: #fff; font-size: 0.6em; font-weight: 400; text-shadow: #111 0px 0px 10px; display: table; max-width: 100%; }
+  h1 { margin-top: 1em; margin-bottom: 0.0em; font-size: 24px; }
   h2 { font-size: 21px; }
   blog_title, h3 { font-size: 18px; }
   h4 { font-size: 16px; }
@@ -298,9 +302,11 @@ Small Device Styles
   #downloads { display: none; }
   .inner { min-width: 240px; max-width: 320px; }
   #project_title { text-align: justify; font-size: 28px; }
+  #menu-item { text-align: left; margin-left: 1.2em; color: #fff; font-size: 0.6em; font-weight: 400; text-shadow: #111 0px 0px 10px; display: block; max-width: 100%; }
+  blog_title { background: #fff; padding: 0.25em; display: table; margin-bottom: -0.5em; }
   h1 { font-size: 24px; }
   h2 { font-size: 16px; }
-  blog_title h3 { font-size: 18px; }
+  blog_title, h3 { font-size: 18px; }
   h4 { font-size: 16px; }
   h5 { font-size: 14px; }
   h6 { font-size: 12px; }
