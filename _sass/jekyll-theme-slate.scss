@@ -16,7 +16,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, blog_title {
   letter-spacing: 0px;
   text-align:left;
   margin: 0;
@@ -118,7 +118,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h3 {
+blog_title, h3 {
     font-size: 24px;
     text-align: left;
     text-align-last:left;
@@ -224,7 +224,7 @@ img {
   //-o-box-shadow: 0 0 5px #ebebeb;
   //-ms-box-shadow: 0 0 5px #ebebeb;
 }
-.logo_topleft {
+#logo_topleft {
     float: left;
     padding-top: 20px;
     padding-right: 0px;
@@ -405,13 +405,13 @@ Full-Width Styles
     text-decoration: underline;
 }
 
-.blog_title {
+blog_title {
     background:#fff;
     padding: 0.25em;
     display: table;
     margin-bottom: -0.5em;
 }
-.blog_post {
+#post {
     padding: 1em;
 	   }
 
@@ -607,7 +607,7 @@ Small Device Styles
     font-size: 21px;
   }
 
-  h3 {
+blog_title,  h3 {
     font-size: 18px;
   }
 
@@ -669,7 +669,7 @@ h4 {
       font-size: 16px;
   }
 
-  h3 {
+blog_title  h3 {
     font-size: 18px;
   }
 

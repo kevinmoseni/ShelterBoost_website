@@ -127,7 +127,7 @@
 /*******************************************************************************
 MeyerWeb Reset
 *******************************************************************************/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { letter-spacing: 0px; text-align: left; margin: 0; padding: 0; border: 0; font: inherit; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, blog_title { letter-spacing: 0px; text-align: left; margin: 0; padding: 0; border: 0; font: inherit; }
 
 .hover-me { text-align: center; display: inline-block; background: green; color: white; padding: 3px; }
 
@@ -160,7 +160,7 @@ body { background: #2C384D; background: -moz-linear-gradient(top, #2C384D, #1d25
 
 body { position: absolute; box-sizing: border-box; width: 100%; color: #373737; background: #212121; font-size: 16px; font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased; }
 
-h3 { font-size: 24px; text-align: left; text-align-last: left; margin: 10px 0; padding-left: 0.7em; font-weight: 300; color: #222222; font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif; }
+blog_title, h3 { font-size: 24px; text-align: left; text-align-last: left; margin: 10px 0; padding-left: 0.7em; font-weight: 300; color: #222222; font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif; }
 
 h1, h2, h5, h6 { font-weight: 700; color: #222222; font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif; }
 
@@ -192,7 +192,7 @@ strong { font-weight: bold; }
 
 img { width: 10%; position: relative; margin: 0 auto; max-width: 10%; }
 
-.logo_topleft { float: left; padding-top: 20px; padding-right: 0px; padding-left: 20px; padding-bottom: 00px; }
+#logo_topleft { float: left; padding-top: 20px; padding-right: 0px; padding-left: 20px; padding-bottom: 00px; }
 
 p img { display: inline; margin: 0; padding: 0; vertical-align: middle; text-align: center; border: none; }
 
@@ -247,9 +247,9 @@ Full-Width Styles
 
 .link_to_post:hover { text-decoration: underline; }
 
-.blog_title { background: #fff; padding: 0.25em; display: table; margin-bottom: -0.5em; }
+blog_title { background: #fff; padding: 0.25em; display: table; margin-bottom: -0.5em; }
 
-.blog_post { padding: 1em; }
+#post { padding: 1em; }
 
 #project_title { text-align: left; margin-left: 4em; color: #fff; font-size: 42px; font-weight: 700; text-shadow: #111 0px 0px 10px; }
 
@@ -288,7 +288,7 @@ Small Device Styles
   #project_title { margin-left: 3.4em; text-align: justify; font-size: 28px; }
   h1 { margin-top: 1em; margin-bottom: 0.5em; font-size: 24px; }
   h2 { font-size: 21px; }
-  h3 { font-size: 18px; }
+  blog_title, h3 { font-size: 18px; }
   h4 { font-size: 16px; }
   h5 { font-size: 14px; }
   h6 { font-size: 12px; }
@@ -300,7 +300,7 @@ Small Device Styles
   #project_title { text-align: justify; font-size: 28px; }
   h1 { font-size: 24px; }
   h2 { font-size: 16px; }
-  h3 { font-size: 18px; }
+  blog_title h3 { font-size: 18px; }
   h4 { font-size: 16px; }
   h5 { font-size: 14px; }
   h6 { font-size: 12px; }
