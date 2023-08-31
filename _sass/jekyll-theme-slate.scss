@@ -225,17 +225,12 @@ img {
   //-ms-box-shadow: 0 0 5px #ebebeb;
 }
 .logo_topleft {
-    max-height: 100%;
-    //max-width: 100%;
-    //height: 100%;
-    border:none;
     float: left;
     padding-top: 20px;
     padding-right: 0px;
     padding-left: 20px;
     padding-bottom: 00px;
 }
-
 
 p img {
   display: inline;
@@ -416,7 +411,8 @@ Full-Width Styles
     display: table;
     margin-bottom: -0.5em;
 }
-.blog_post { padding: 1em;
+.blog_post {
+    padding: 1em;
 	   }
 
 

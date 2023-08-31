@@ -192,7 +192,7 @@ strong { font-weight: bold; }
 
 img { width: 10%; position: relative; margin: 0 auto; max-width: 10%; }
 
-.logo_topleft { max-height: 100%; border: none; float: left; padding-top: 20px; padding-right: 0px; padding-left: 20px; padding-bottom: 00px; }
+.logo_topleft { float: left; padding-top: 20px; padding-right: 0px; padding-left: 20px; padding-bottom: 00px; }
 
 p img { display: inline; margin: 0; padding: 0; vertical-align: middle; text-align: center; border: none; }
 
