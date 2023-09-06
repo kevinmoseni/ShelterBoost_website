@@ -16,15 +16,24 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, blog_title {
   letter-spacing: 0px;
   text-align:left;
   margin: 0;
   padding: 0;
   border: 0;
   font: inherit;
-  vertical-align: middle;
+//  vertical-align: bottom;//middle;
 }
+
+.hover-me{
+    text-align: center;
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 3px;
+}
+
 
 .button {
     display: flex;
@@ -88,6 +97,15 @@ Theme Styles
 *******************************************************************************/
 
 body {
+  background: #2C384D;//#fff;//
+  background: -moz-linear-gradient(top, #2C384D, #1d2533);
+  background: -webkit-linear-gradient(top, #2C384D, #1d2533);
+  background: -ms-linear-gradient(top, #2C384D, #1d2533);
+  background: -o-linear-gradient(top, #2C384D, #1d2533);
+  background: linear-gradient(to top, #2C384D, #1d2533);
+}
+
+body {
   position: absolute;
   //position:fixed;
   box-sizing: border-box;
@@ -100,22 +118,25 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h3 {
-    text-align:left;//justify;
+blog_title, h3 {
+    font-size: 24px;
+    text-align: left;
     text-align-last:left;
     margin: 10px 0;
     padding-left: 0.7em;
     font-weight: 300;
     color:#222222;
     font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
-    letter-spacing: -1px;
    }
 
-h1, h2, h4, h5, h6 {
-  margin: 10px 0;
+h1, h2, h5, h6 {
   font-weight: 700;
   color:#222222;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+}
+
+#post{
+    padding-left:2em;
 }
 
 h1 {
@@ -123,18 +144,18 @@ h1 {
   font-weight: 700;
 }
 
-h2 {
-  padding-bottom: 2px;
-  font-size: 32px;
+h2{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-size: 32px;
 //  background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
-h3 {
-  font-size: 24px;
-}
-
 h4 {
-  font-size: 21px;
+    font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background: #FFFFFF;  
 }
 
 h5 {
@@ -155,9 +176,8 @@ footer p {
 
 a {
   text-decoration: none;
-  color: #0F79D0; //#2C384D
+  color: #000000; // #0F79D0; //#2C384D
   text-shadow: none;
-
   transition: color 0.5s ease;
   transition: text-shadow 0.5s ease;
   -webkit-transition: color 0.5s ease;
@@ -171,7 +191,9 @@ a {
 }
 
 a:hover, a:focus {
-  text-decoration: underline;
+    text-decoration: underline;
+    //weight: 700;
+    //color: #E78B4F;
 }
 
 footer a {
@@ -188,10 +210,10 @@ strong {
 }
 
 img {
-  width:10%;
-  position: relative;
-  margin: 0 auto;
-  max-width: 739px;
+    width:10%;
+    position: relative;
+    margin: 0 auto;
+    max-width: 10%;
   //padding: 5px;
   //margin: 10px 0 10px 0;
   //border: 1px solid #ebebeb;
@@ -200,6 +222,13 @@ img {
   //-moz-box-shadow: 0 0 5px #ebebeb;
   //-o-box-shadow: 0 0 5px #ebebeb;
   //-ms-box-shadow: 0 0 5px #ebebeb;
+}
+#logo_top {
+    float: left;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 20px;
+    padding-bottom: 00px;
 }
 
 p img {
@@ -368,6 +397,24 @@ Full-Width Styles
   padding: 50px 10px 30px 10px;
 }
 
+.link_to_post {
+    padding-left:1em;
+}
+.link_to_post:hover {
+    text-decoration: underline;
+}
+
+blog_title {
+    background:#fff;
+    padding: 0.25em;
+    display: table;
+    margin-bottom: -0.5em;
+}
+#post {
+    padding: 1em;
+	   }
+
+
 #project_title {
   text-align: left;
   margin-left: 4em;
@@ -377,14 +424,35 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
+#menu-item {
+  text-align: left;
+  margin-left: 1.2em;
+  color: #fff;
+  font-size: 0.5em;
+  font-weight: 400;
+  text-shadow: #111 0px 0px 10px;
+}
+
 #project_tagline {
-  color: #000;//#EE8D4D;//#fff;
-  font-size: 24px;
-  font-weight: 500;
-  background: none;
-  //text-shadow: #111 0px 0px 10px;
+  text-align:   center;
+  font-size:    1.5em;
+  color:        #000;
+  font-weight:  500;
+  background:   none;
+  padding-top:  1em;
   margin-left:  5em;
   margin-right: 5em;
+}
+
+#blog_table_of_contents {
+  text-align:   center;
+  font-size:    1.5em;
+  color:        #000;
+  font-weight:  500;
+  background:   none;
+  padding-top:  1em;
+  margin-left:  8em;
+  margin-right: 8em;
 }
 
 //#downloads {
@@ -448,17 +516,17 @@ Small Device Styles
 
 @media screen and (max-width: 992px) {
   img {
-    max-width: 100%;
+      max-width: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
     .outer {
-    width: 100%;
-    padding-top: 1em ;
-    padding-bottom: 0.6em;
-}
-
+	width: 100%;
+	padding-top: 1em ;
+	padding-bottom: 0.6em;
+    }
+    
     
     #project_tagline {
 	color: #000;//#EE8D4D;//#fff;
@@ -469,6 +537,27 @@ Small Device Styles
 	margin-left:  1em;
 	margin-right: 1em;
     }
+    
+    blog_title {
+	background:#fff;
+	padding: 0.25em;
+	display: table;
+	margin-bottom: -0.5em;
+    }
+    
+    #blog_table_of_contents {
+	text-align:   center;
+	font-size:    1.5em;
+	color:        #000;
+	font-weight:  500;
+	background:   none;
+	margin-left:  1em;
+	margin-right: 1em;
+	display: table;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+    }
+
     
     .button {
 	display: flex;
@@ -491,6 +580,9 @@ Small Device Styles
 	box-shadow: 0px 3px 0px #4d5e80;
     }
     .big-btn {
+	margin-top: 1em;
+	margin-right: 1em;
+	margin-left: -6em;
 	float: right;
 	//width: 90px;
 	//height: 40px;
@@ -499,12 +591,19 @@ Small Device Styles
     body {
     width: 100%;
     font-size:11px;
-  }
+    }
+    
+    #logo_top {
+	float: right;
+	margin-top: 5em;
+	margin-right: -0.5em;
+    }
+    
     img {
-	position: relative;
-	width: 25%;
+	//position: right;
+	width: 15%;
 	//padding: 5px;
-	margin-left: 1px;
+	//margin-left: 1px;
 	//border: 1px solid #ebebeb;
 	//box-shadow: 0 0 5px #ebebeb;
 	//-webkit-box-shadow: 0 0 5px #ebebeb;
@@ -523,14 +622,27 @@ Small Device Styles
   }
 
   #project_title {
-      margin-left: 3.4em;
-      text-align: justify;
+      margin: 0em;
+      margin-right: 3em;
+      margin-left: 1em;
+      text-align: left;
       font-size: 28px;
   }
-
+  
+  #menu-item {
+  text-align: left;
+  margin-left: 1.2em;
+  color: #fff;
+  font-size: 0.6em;
+  font-weight: 400;
+  text-shadow: #111 0px 0px 10px;
+  display: table;
+  max-width: 100%;
+  }
+  
   h1 {
       margin-top: 1em;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.0em;
       font-size: 24px;
   }
 
@@ -538,11 +650,11 @@ Small Device Styles
     font-size: 21px;
   }
 
-  h3 {
+blog_title,  h3 {
     font-size: 18px;
   }
 
-  h4 {
+h4 {
     font-size: 16px;
   }
 
@@ -591,7 +703,22 @@ Small Device Styles
       text-align: justify;
       font-size: 28px;
   }
-
+  #menu-item {
+      text-align: left;
+      margin-left: 1.2em;
+      color: #fff;
+      font-size: 0.6em;
+      font-weight: 400;
+      text-shadow: #111 0px 0px 10px;
+      display: block;
+      max-width: 100%;
+  }
+  blog_title {
+    background:#fff;
+    padding: 0.25em;
+    display: table;
+    margin-bottom: -0.5em;
+  }
   h1 {
       font-size: 24px;
   }
@@ -600,11 +727,11 @@ Small Device Styles
       font-size: 16px;
   }
 
-  h3 {
+blog_title,  h3 {
     font-size: 18px;
   }
 
-  h4 {
+h4 {
     font-size: 16px;
   }
 

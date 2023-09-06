@@ -18,6 +18,11 @@ form label,
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+form {width:100%;
+      padding-top: 10em;
+      padding-bottom: 10em}
+
+
 form label,
 form legend {
   font-size: 1em;
